@@ -11,7 +11,7 @@
 			<header>
 				<div class="header-top clearfix">
 					<h1 class="logo"> <a class="logo__link" href="<?php home_url();?>">Wood Design</a></h1>
-					<nav>
+					<nav class="main-nav">
 						<div class="menu-button" aria-controls="primary-menu" aria-expanded="false">MENU</div>
 						<?php
 			wp_nav_menu( array(
@@ -24,8 +24,7 @@
 			) );
 			?>
 					</nav>
-				</div>
-				<div  class="header-bottom">
-					<span>Wood Design is a modern web & graphic design studio in Europe. We create beautiful things for web and print. You can see our great work examples in <a href="#">Portfolio</a>. If you need a professional design services <a href="#">Contact</a> us. We would love to work with you.</span>
-				</div>
+                </div>
+                
+				<?php get_sidebar('top'); ?>
 			</header>
