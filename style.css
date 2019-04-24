@@ -94,6 +94,10 @@ nav a.active {
 nav a:hover {
   color: #f2b77d;
 }
+
+.current_page_item a {
+  color: #f2b77d;
+}
 .header-bottom {
   padding: 15px 0;
   margin-bottom: 20px;

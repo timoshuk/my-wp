@@ -12,14 +12,17 @@
 				<div class="header-top clearfix">
 					<h1 class="logo"> <a class="logo__link" href="<?php home_url();?>">Wood Design</a></h1>
 					<nav>
-						<div class="menu-button">MENU</div>
-						<ul>
-							<li><a href="#" class="active">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
+						<div class="menu-button" aria-controls="primary-menu" aria-expanded="false">MENU</div>
+						<?php
+			wp_nav_menu( array(
+				'theme_location' => 'header_menu',
+                'menu_id'        => 'primary-menu',
+                
+                'theme_location'  => '',
+	'container'       => false, 
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			) );
+			?>
 					</nav>
 				</div>
 				<div  class="header-bottom">
