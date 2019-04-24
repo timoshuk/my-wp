@@ -55,6 +55,11 @@ header * {
   margin: 0;
   color: #bc8a59;
 }
+.logo__link {
+  font-size: 36px;
+  color: #bc8a59;
+  text-decoration: none;
+}
 .header-top h1::before {
   content: "";
   display: inline-block;

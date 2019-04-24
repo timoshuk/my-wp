@@ -88,7 +88,8 @@ add_action( 'widgets_init', 'my_wp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function my_wp_scripts() {
-	wp_enqueue_style( 'my_wp-style', get_stylesheet_uri() );
+	
+	wp_enqueue_style( 'my_wp-style', get_stylesheet_uri());
 
 	wp_enqueue_script( 'my_wp-js', get_template_directory_uri() . '/js/script.js', array('jquery'), '', true );
 
