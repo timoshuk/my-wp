@@ -1,38 +1,44 @@
 <?php get_header(); ?>
+			
 			<div  class="content-wrapper clearfix">
 				<main  class="clearfix">
-					<section>
-						<a href= "#"><img src="img/1st_Design.jpg" alt= "1st Design"></a>
-						<h2>Fictional Design Studio Layout</h2>
-						<span>This work description goes here. Just 
-simple and short text about this work.</span>
-					</section>
-					<section>
-						<a href= "#"><img src="img/2nd_Design.png" alt= "2nd Design"></a>
-						<h2>Creative Mouse Design</h2>
-						<span>This work description goes here. Just 
-simple and short text about this work.</span>
-					</section>
-					<section>
-						<a href= "#"><img src="img/3rd_Design.png" alt= "3rd Design"></a>
-						<h2>Real Estate Company Layout</h2>
-						<span>This work description goes here. Just 
-simple and short text about this work.</span>
-					</section>
-					<section>
-						<a href= "#"><img src="img/4th_Design.png" alt= "4th Design"></a>
-						<h2>Web Design Fan - Blog for designers</h2>
-						<span>This work description goes here. Just 
-simple and short text about this work.</span>
-					</section>
-					<div  class="main-footer clearfix">
-						<a href= "#">Our Blog</a>
-						<a href= "#">See Portfolio</a>
-					</div>
+<?php
+		if ( have_posts() ) :
+
+						/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+				?>
+				<section>
+				<a href= "<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<span><a href="<?php the_permalink(); ?>"> <?php echo CFS()->get( 'post_deskription' );?></a></span>
+			</section>
+			
+<?php
+			endwhile;
+?>
+			<div  class="main-footer clearfix">
+			the_posts_navigation(array(
+				'prev_text'          => 'Предыдущие записи',
+				'next_text'          => 'Следующие записи',
+				'screen_reader_text' => 'Навигация',
+			));
+			</div>
+<?php		
+		endif;
+		?>
+
+					
+					
 				</main>
+							<?php get_sidebar('right') ?>
 				<aside>
 					<div class="tw-wrapper clearfix">
+
+
 						<div  class="tw-inner">
+							
 							<div  class="tw-text">
 								<span>Free Wood Design PSD Template. For more freebies and photoshop tutorials follow @webdesignfan.</span>
 							</div>

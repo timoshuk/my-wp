@@ -73,8 +73,8 @@ add_action( 'after_setup_theme', 'my_wp_content_width', 0 );
  */
 function my_wp_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'my_wp' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'Right-Sidebar', 'my_wp' ),
+		'id'            => 'sidebar-right',
 		'description'   => esc_html__( 'Add widgets here.', 'wp_start' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
