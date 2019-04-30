@@ -66,11 +66,7 @@ function my_wp_content_width() {
 }
 add_action( 'after_setup_theme', 'my_wp_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
+
 function my_wp_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Right-Sidebar', 'my_wp' ),
