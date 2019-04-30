@@ -26,5 +26,5 @@
 					</nav>
                 </div>
                 
-				<?php get_sidebar('top'); ?>
+				<?php if(!is_single() && is_single() ):get_sidebar('top'); endif; ?>
 			</header>
