@@ -1,12 +1,17 @@
 <?php
-
-// Right sitebar 
+/**
+ * The sidebar containing the main widget area
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package My_Start
+ */
 
 if ( ! is_active_sidebar( 'sidebar-right' ) ) {
 	return;
 }
 ?>
 
-<aside>
+<aside id="main-sidebar" class="widget-area">
 	<?php dynamic_sidebar( 'sidebar-right' ); ?>
-</aside>
+</aside><!-- #secondary -->
