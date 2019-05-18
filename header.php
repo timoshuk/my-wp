@@ -19,7 +19,7 @@
 
 
 <div id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<button id="menu-toggle" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
             <span class="line-item"></span>
             <span class="line-item"></span>
             <span class="line-item"></span>
