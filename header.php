@@ -14,7 +14,7 @@
 <header class="header">
 
 <div class="logo"><?php the_custom_logo()?></div>
-<div class="firm-name"><?php bloginfo('name')?></div>
+<h1 class="firm-name"><a href="<?php echo get_home_url()?>"><?php bloginfo('name')?></a></h1>
 
 
 
