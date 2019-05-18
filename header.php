@@ -18,19 +18,23 @@
 
 
 
-<nav id="site-navigation" class="main-navigation">
+<div id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
             <span class="line-item"></span>
             <span class="line-item"></span>
             <span class="line-item"></span>
                         </button>
+    
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'top-menu',
-				'menu_id'        => 'primary-menu',
+                'menu_id'        => 'primary-menu',
+                'container'        => 'nav'
+                
 			) );
-			?>
-		</nav><!-- #site-navigation -->
+            ?>
+    
+		</div><!-- #site-navigation -->
 
 </header>
 

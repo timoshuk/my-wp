@@ -407,4 +407,35 @@ template {
   opacity: 0;
 }
 
+/* Nav */
+
+/* Toggle btn */
+.menu-toggle {
+  position: absolute;
+  top: 20%;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.menu-toggle:focus,
+.menu-toggle:hover {
+  transform: scale(1.2);
+}
+
+.menu-toggle .line-item {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: #1e73be;
+  margin-bottom: 5px;
+}
+
+.menu-hedermenu-container {
+  display: none;
+}
+
 /*End Header */
