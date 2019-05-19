@@ -60,4 +60,12 @@ wp_enqueue_script( 'my_wp-script', get_template_directory_uri() . '/js/script.js
 }
 add_action( 'wp_enqueue_scripts', 'my_wp_scripts' );
 
+add_filter( 'excerpt_length', function(){
+	return 20;
+} );
+
+add_filter('excerpt_more', function($more) {
+	return '...';
+});
+
 ?>

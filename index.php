@@ -20,9 +20,8 @@
 
         <?php } ?>
                 <h2><?php the_title(); ?></h2>
-                <?php if(CFS()->get( '_short_content')){?>
-                <div class="short_content"><?php echo CFS()->get( '_short_content' ); ?></div>
-                <?php }?>
+               
+                <div class="short_content"><?php the_excerpt() ?></div>
         </article>      
 </a>
 <?php
