@@ -427,13 +427,13 @@ h2 {
 /* Logo */
 .logo {
   margin-right: auto;
-  max-width: 60px;
-  height: 60px;
-  position: relative;
-  overflow: hidden;
 }
 .logo .custom-logo-link {
   display: block;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
 }
 
 .logo .custom-logo-link img {
@@ -518,8 +518,10 @@ h2 {
 /* End toggle button */
 .menu-hedermenu-container {
   position: absolute;
-  left: 10px;
-  right: 10px;
+  left: 5%;
+  right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   top: 100px;
   background-color: rgba(187, 187, 187, 0.9);
   display: none;
@@ -583,6 +585,87 @@ h2 {
   color: #fff;
 }
 
+@media all and (min-width: 979px) {
+  .header {
+    height: 120px;
+  }
+  .header__flex {
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+  }
+
+  /* Logo */
+  .logo {
+    margin-right: 20px;
+  }
+  /* Logo */
+  .firm-name {
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    right: initial;
+    bottom: initial;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-hedermenu-container {
+    display: block;
+    position: relative;
+    left: initial;
+    right: initial;
+    padding-left: 0px;
+    padding-right: 0px;
+    top: initial;
+    background-color: transparent;
+    opacity: 1;
+    height: auto;
+    z-index: 999;
+  }
+
+  #primary-menu {
+    display: flex;
+  }
+
+  .menu-item-has-children {
+    position: relative;
+  }
+
+  .menu-item-has-children::after {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    content: "›";
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    transform: translateY(-40%) rotate(90deg);
+  }
+
+  .menu-item-has-children:hover::after {
+    color: #fff;
+  }
+
+  #primary-menu .sub-menu {
+    display: none;
+    background: #ddd;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #primary-menu li a {
+    padding-left: 10px;
+    padding-right: 15px;
+    border-bottom: none;
+  }
+
+  #primary-menu .sub-menu li a {
+    padding-left: 10px;
+  }
+}
 /*End Header */
 
 /* Main content */
