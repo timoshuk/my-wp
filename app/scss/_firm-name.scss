@@ -1,0 +1,35 @@
+/* firm name */
+.firm-name {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -70px;
+  text-align: center;
+}
+
+.firm-name a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1e73be;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.firm-name:active a,
+.firm-name:hover a {
+  color: #056ac2;
+}
+.firm-name:active a {
+  transform: scale(0.9);
+}
+
+@media all and (min-width: 979px) {
+  .firm-name {
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    right: initial;
+    bottom: initial;
+  }
+}
