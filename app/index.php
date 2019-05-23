@@ -1,6 +1,8 @@
 <?php get_header();?>
 
+<div class="posts">
 <div class="container">
+<div class="posts__grid">
 <?php
 		if ( have_posts() ) :
 			
@@ -11,7 +13,7 @@
 <article class="post-item">
         
 <?php if ( has_post_thumbnail()) { ?>
-   <?php the_post_thumbnail(); ?>
+   <div class="post-img__wrap"><?php the_post_thumbnail(); ?></div>
    
  <?php }
     else{
@@ -29,7 +31,9 @@
 		endif;
 		?>
 
-</div>
+</div><!--posts-grid-->
+</div> <!--container-->
+</div><!--Posts-->
 <?php
 get_sidebar('right');
 get_footer();
