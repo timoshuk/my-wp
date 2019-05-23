@@ -14,7 +14,7 @@
 <header class="header">
 <div class="container">
     <div class="header__flex">
-<div class="logo">Logotip<?php the_custom_logo()?></div>
+<div class="logo"><?php the_custom_logo()?></div>
 <h1 class="firm-name"><a href="<?php echo get_home_url()?>"><?php bloginfo('name')?></a></h1>
 
 

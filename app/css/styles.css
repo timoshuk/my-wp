@@ -548,8 +548,8 @@ h2 {
     position: relative;
     left: initial;
     right: initial;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     top: initial;
     background-color: transparent;
     opacity: 1;
@@ -573,14 +573,16 @@ h2 {
   .menu-item-has-children:hover::after {
     color: #fff; }
   #primary-menu .menu-item-has-children:hover .sub-menu {
-    display: block; }
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px; }
   #primary-menu .sub-menu {
     display: none;
     position: absolute;
     background: #ddd;
-    min-width: 200px;
-    padding-left: 10px;
-    padding-right: 10px; }
+    min-width: 200px; }
   #primary-menu li a {
     padding-left: 10px;
     padding-right: 15px;
