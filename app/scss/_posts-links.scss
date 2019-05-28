@@ -1,0 +1,26 @@
+.posts-links {
+  position: relative;
+
+  & .nav-links {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.nav-links .page-numbers {
+  display: block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: 0 0 1px #666;
+  color: #666;
+
+  &:hover,
+  &:focus {
+    background: #ddd;
+  }
+}
+
+.page-numbers.current {
+  background: #ddd;
+}
