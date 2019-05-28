@@ -601,7 +601,7 @@ h2 {
   display: block;
   text-decoration: none;
   outline: none;
-  box-shadow: 0 0 4px black; }
+  box-shadow: 0 0 3px #666; }
 
 .post-item__link:focus {
   box-shadow: 0 0 4px 1px #e73050; }
@@ -646,7 +646,7 @@ h2 {
 
 @media all and (min-width: 979px) {
   .posts {
-    width: 75%;
+    width: 70%;
     position: relative; }
     .posts .container {
       width: 100%;
@@ -663,7 +663,12 @@ h2 {
     display: flex; } }
 
 #main-sidebar {
-  width: 20%; }
+  display: none; }
+
+@media all and (min-width: 979px) {
+  #main-sidebar {
+    display: block;
+    width: 25%; } }
 
 .widget_search {
   margin-bottom: 35px; }
@@ -708,5 +713,31 @@ h2 {
   color: #666; }
   .widget_search .search-submit:focus {
     outline: 1px solid #e73050; }
+
+.widget_categories {
+  margin-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 5px #ddd; }
+
+.widget_categories .widget-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.6em; }
+
+.widget_categories ul {
+  list-style: none; }
+  .widget_categories ul li {
+    margin-bottom: 0.5em; }
+  .widget_categories ul li a {
+    color: #666;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none; }
+    .widget_categories ul li a:hover, .widget_categories ul li a:focus {
+      color: #000; }
 
 /*# sourceMappingURL=styles.css.map */

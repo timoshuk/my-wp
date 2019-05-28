@@ -9,7 +9,7 @@
   display: block;
   text-decoration: none;
   outline: none;
-  box-shadow: 0 0 4px black;
+  box-shadow: 0 0 3px #666;
 }
 .post-item__link:focus {
   box-shadow: 0 0 4px 1px #e73050;
@@ -59,7 +59,7 @@
 
 @media all and (min-width: 979px) {
   .posts {
-    width: 75%;
+    width: 70%;
     position: relative;
 
     & .container {

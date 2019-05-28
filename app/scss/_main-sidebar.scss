@@ -1,3 +1,10 @@
 #main-sidebar {
-  width: 20%;
+  display: none;
+}
+
+@media all and (min-width: 979px) {
+  #main-sidebar {
+    display: block;
+    width: 25%;
+  }
 }
