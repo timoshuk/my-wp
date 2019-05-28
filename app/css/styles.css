@@ -740,4 +740,30 @@ h2 {
     .widget_categories ul li a:hover, .widget_categories ul li a:focus {
       color: #000; }
 
+.widget_recent_entries {
+  margin-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 5px #ddd; }
+
+.widget_recent_entries .widget-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.6em; }
+
+.widget_recent_entries ul {
+  list-style: none; }
+  .widget_recent_entries ul li {
+    margin-bottom: 0.5em; }
+  .widget_recent_entries ul li a {
+    color: #666;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none; }
+    .widget_recent_entries ul li a:hover, .widget_recent_entries ul li a:focus {
+      color: #000; }
+
 /*# sourceMappingURL=styles.css.map */
