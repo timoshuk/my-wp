@@ -178,7 +178,7 @@ gulp.task("browserSync", function() {
     //   baseDir: "app"
     // },
     // port: 8080,
-    proxy: "localhost/vcci/news/",
+    proxy: "localhost/vcci",
     open: true,
     notify: true
   });
