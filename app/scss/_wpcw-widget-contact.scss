@@ -1,0 +1,45 @@
+.wpcw-widget-contact {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.6;
+
+  & .widget-title {
+    position: absolute;
+    opacity: 0;
+  }
+
+  & ul li strong {
+    font-size: 2rem;
+    line-height: 2.5em;
+  }
+
+  & ul li div a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      color: #07c;
+    }
+
+    &:active {
+      color: lighten($color: #07c, $amount: 10%);
+    }
+  }
+}
+
+@media all and (min-width: 979px) {
+  .wpcw-widget-contact ul {
+    display: flex;
+    text-align: left;
+    width: 85%;
+
+    & li {
+      margin-right: 5%;
+      width: 320px;
+    }
+  }
+}

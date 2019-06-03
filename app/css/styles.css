@@ -658,6 +658,9 @@ h2 {
   .post-item__link {
     max-width: 45%; } }
 
+.main-content {
+  margin-bottom: 40px; }
+
 @media all and (min-width: 979px) {
   .main-content {
     display: flex; } }
@@ -790,5 +793,44 @@ h2 {
 
 .page-numbers.current {
   background: #ddd; }
+
+.footer {
+  background: #191919;
+  padding-top: 50px;
+  padding-bottom: 20px; }
+  .footer .footer__content {
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+
+.wpcw-widget-contact {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.6; }
+  .wpcw-widget-contact .widget-title {
+    position: absolute;
+    opacity: 0; }
+  .wpcw-widget-contact ul li strong {
+    font-size: 2rem;
+    line-height: 2.5em; }
+  .wpcw-widget-contact ul li div a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s; }
+    .wpcw-widget-contact ul li div a:hover, .wpcw-widget-contact ul li div a:focus {
+      color: #07c; }
+    .wpcw-widget-contact ul li div a:active {
+      color: #0095ff; }
+
+@media all and (min-width: 979px) {
+  .wpcw-widget-contact ul {
+    display: flex;
+    text-align: left;
+    width: 85%; }
+    .wpcw-widget-contact ul li {
+      margin-right: 5%;
+      width: 320px; } }
 
 /*# sourceMappingURL=styles.css.map */
