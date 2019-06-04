@@ -1,5 +1,5 @@
 <?php get_header();?>
-
+<div class="page-data">
 <div class="posts">
 <div class="container">
 <div class="posts__grid">
@@ -47,6 +47,7 @@
 </div>
 </div> <!--container-->
 </div><!--Posts-->
+</div><!-- page-data -->
 
 <?php
 get_sidebar('right');

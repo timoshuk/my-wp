@@ -646,7 +646,7 @@ h2 {
 
 @media all and (min-width: 979px) {
   .posts {
-    width: 70%;
+    width: 100%;
     position: relative; }
     .posts .container {
       width: 100%;

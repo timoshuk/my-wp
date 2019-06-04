@@ -58,6 +58,16 @@ function my_wp_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => 'Сайтбар на головній сторінці',
+		'id'            => 'sidebar-home',
+		'description'   => 'Відображається справа на головній сторінці',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'my_wp_widgets_init' );
 
