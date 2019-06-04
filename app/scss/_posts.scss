@@ -76,4 +76,21 @@
   .post-item__link {
     max-width: 45%;
   }
+
+  @supports (display: grid) {
+    .posts__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .post-item__link {
+      max-width: initial;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
 }

@@ -10,7 +10,7 @@
 $args = array(
     'category_name'=>'shows,travel,services,workshops,training,forum',
     'post_type' => 'post',
-    'posts_per_page' => 2
+    'posts_per_page' => 3
 );
 
 $query = new WP_Query( $args );
