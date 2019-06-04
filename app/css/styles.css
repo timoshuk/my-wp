@@ -803,6 +803,11 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px; }
 
+@media all and (min-width: 979px) {
+  #footer-sidebar {
+    position: relative;
+    display: flex; } }
+
 .wpcw-widget-contact {
   position: relative;
   text-align: center;
@@ -825,12 +830,39 @@ h2 {
       color: #0095ff; }
 
 @media all and (min-width: 979px) {
+  .wpcw-widget-contact {
+    width: 80%; }
   .wpcw-widget-contact ul {
     display: flex;
-    text-align: left;
-    width: 85%; }
+    text-align: left; }
     .wpcw-widget-contact ul li {
       margin-right: 5%;
       width: 320px; } }
+
+.sfsi {
+  text-align: center;
+  position: relative; }
+  .sfsi .widget-title {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden; }
+
+.norm_row.sfsi_wDiv {
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .norm_row.sfsi_wDiv .sfsi_wicons {
+    margin: 10px; }
+
+@media all and (min-width: 979px) {
+  .sfsi {
+    position: relative;
+    min-width: 20%; } }
 
 /*# sourceMappingURL=styles.css.map */

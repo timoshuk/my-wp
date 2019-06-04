@@ -1,0 +1,33 @@
+.sfsi {
+  text-align: center;
+  position: relative;
+
+  & .widget-title {
+    opacity: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+
+.norm_row.sfsi_wDiv {
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  & .sfsi_wicons {
+    margin: 10px;
+  }
+}
+
+@media all and (min-width: 979px) {
+  .sfsi {
+    position: relative;
+    min-width: 20%;
+  }
+}

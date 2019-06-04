@@ -32,10 +32,13 @@
 }
 
 @media all and (min-width: 979px) {
+  .wpcw-widget-contact {
+    width: 80%;
+  }
+
   .wpcw-widget-contact ul {
     display: flex;
     text-align: left;
-    width: 85%;
 
     & li {
       margin-right: 5%;
