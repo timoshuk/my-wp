@@ -38,3 +38,23 @@ h1.single-post__title {
     object-fit: cover;
   }
 }
+
+.single-post__data {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify;
+
+  & p {
+    margin-bottom: 1em;
+  }
+
+  & a.profileLink {
+    color: rgba(0, 117, 189, 1);
+    text-decoration: none;
+
+    &:hover {
+      color: rgba(0, 117, 189, 0.6);
+    }
+  }
+}

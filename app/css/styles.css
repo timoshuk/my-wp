@@ -913,4 +913,17 @@ h1.single-post__title {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.single-post__data {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: justify; }
+  .single-post__data p {
+    margin-bottom: 1em; }
+  .single-post__data a.profileLink {
+    color: #0075bd;
+    text-decoration: none; }
+    .single-post__data a.profileLink:hover {
+      color: rgba(0, 117, 189, 0.6); }
+
 /*# sourceMappingURL=styles.css.map */
