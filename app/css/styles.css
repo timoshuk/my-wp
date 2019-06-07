@@ -877,4 +877,40 @@ h2 {
     position: relative;
     min-width: 20%; } }
 
+body.single .header {
+  margin-bottom: 20px; }
+
+.single-post {
+  position: relative; }
+
+h1.single-post__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  max-width: 700px;
+  color: #000;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1em; }
+
+.single-post__thumb {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  width: 30vw;
+  height: 20vw;
+  min-width: 250px;
+  min-height: 200px;
+  max-width: 800px;
+  overflow: hidden; }
+  .single-post__thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 /*# sourceMappingURL=styles.css.map */
