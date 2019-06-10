@@ -1,44 +1,31 @@
 <?php get_header();?>
-<div class="page-data">
-<div class="posts">
+<div class="page">
+<div class="page__post">
 <div class="container">
-<div class="posts__grid">
 
-<h1>Page php</h1>
+
 <?php
-		if ( have_posts() ) :
 			
 			while ( have_posts() ) :
                 the_post();
                 ?>
-<a class="post-item__link" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-<article class="post-item">
-        
-<?php if ( has_post_thumbnail()) { ?>
-   <div class="post-img__wrap"><?php the_post_thumbnail(); ?></div>
-   
- <?php }
-    else{
-        ?>
-  <img class="post-pattern" src="<?php echo get_template_directory_uri() . '/images/post-pattern.jpg'?>" alt="Pattert image">
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	
 
-        <?php } ?>
-                <h2><?php the_title(); ?></h2>
-               
-                <div class="short_content"><?php the_excerpt() ?></div>
-        </article>      
-</a>
+	<div class="entry-content">
+		<?php
+		the_content();?>
+	</div><!-- .entry-content -->
+
+</article><!-- #post-<?php the_ID(); ?> -->
 <?php
 			endwhile;
-		endif;
 		?>
 
-</div><!--posts-grid-->
 </div> <!--container-->
-</div><!--Posts-->
-</div><!-- page-data -->
+</div><!--page__post-->
+</div><!-- page-->
 
 <?php
-get_sidebar('right');
 get_footer();
 ?>

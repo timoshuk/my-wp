@@ -151,7 +151,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'               => 'ultimate-social-media-icons', // The plugin name.
 			'slug'               => 'ultimate-social-media-icons', // The plugin slug (typically the folder name).
-			'source'             => get_stylesheet_directory() . '/lib/plugins/ultimate-social-media-icons.2.2.4', // The plugin source.
+			'source'             => get_stylesheet_directory() . '/lib/plugins/ultimate-social-media-icons.2.2.4.zip', // The plugin source.
 			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 			'version'            => '2.2.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
