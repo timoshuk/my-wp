@@ -89,4 +89,6 @@ add_filter('excerpt_more', function($more) {
 	return '...';
 });
 
+require get_template_directory() . '/TGM/my-wp.php';
+
 ?>

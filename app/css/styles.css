@@ -926,4 +926,22 @@ h1.single-post__title {
     .single-post__data a.profileLink:hover {
       color: rgba(0, 117, 189, 0.6); }
 
+.error-search {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.error-search h1 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .error-search h1 span {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 6rem; }
+  .error-search h1 span:first-child,
+  .error-search h1 span:last-child {
+    color: red; }
+
 /*# sourceMappingURL=styles.css.map */
